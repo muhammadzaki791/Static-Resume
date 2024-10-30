@@ -1,0 +1,154 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #caf0caf8; /* Light background */
+  color: #333; /* Dark text for contrast */
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(0, 33, 71); 
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 2.5em;
+  margin: 60px;
+  margin-left: 0;
+  margin-bottom: 0;
+  color: whitesmoke; 
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #3498db; 
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.8), 0 0 20px rgba(52, 152, 219, 0.5); /* Glowing effect */
+}
+
+.title {
+  display: flex;
+  font-size: 1.5em;
+  color: #3498db; 
+  font-weight: 700;
+}
+
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title:hover {
+  text-size-adjust: 1em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 1.8em;
+  color: whitesmoke; 
+  border-bottom: 2px solid #3498db; 
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.edu-h {
+  color: white;
+}
+
+.about {
+  color: whitesmoke;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.skills-ul,
+.edu-ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-ul li,
+.edu-ul li {
+  background: #3498db;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.skills-ul li:hover,
+.edu-ul li:hover {
+  background: #caf0f8; 
+}
+
+
+button {
+  background-color: #0077b6; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 15px; 
+  font-size: 1em; 
+  cursor: pointer; 
+  transition: background 0.3s, transform 0.2s; 
+  margin: 10px 0; 
+}
+
+button:hover {
+  background-color: #00b4d8; 
+  transform: translateY(-2px); 
+}
+
+.contact p {
+  color: whitesmoke;
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+/* Links */
+a {
+  color: #3498db; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.gmail:hover,
+a:hover {
+  text-decoration: underline;
+  color: darkorange;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .name {
+    font-size: 2em;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+}
